@@ -9,6 +9,133 @@
     GENERAL STYLES
  *************************************************/
 
+ li{
+    display: inline-block;
+    list-style-type: none;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+
+ /* BACKGROUND COLORS */
+ .bg-blu{
+    background-color: #0084fd;
+ }
+
+ .bg-light-blu{
+    background-color: #b5ddff;
+ }
+
+ .bg-violet{
+    background-color: #9792e4;
+ }
+
+ .gb-dark-grey{
+    background-color: #333333;
+ }
+
+ /* TXT COLORS */
+
+ .tx-white{
+    color: white;
+ }
+
+ .tx-blu{
+    color: #0084fd;;
+ }
+
+ .tx-grey{
+    color: #5b6f80;
+ }
+
+ .tx-violet{
+    color: #9792e4;
+ }
+
+ .tx-yellow{
+   color: #fdc15f;
+ }
+
+ /* BUTTONS */
+
+ .button{
+    border-radius: 18px;
+    padding: 0.5rem 1rem;
+ }
+
+ .btn-padding{
+    padding: 0 2rem;
+
+ }
+
+ .btn-big{
+    padding: 1rem 2.5rem;
+ }
+
+ /************************************************
+    UTILITIES
+ ************************************************/
+
+/* LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.col {
+    padding: 0 1rem;
+    /* debug */
+    min-height: 300px;
+    min-width: 200px;
+    border: 1px solid black;
+}
+
+/* TEXT */
+.text-center {
+    text-align: center;
+}
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+
+ /* HEADER */
+header{
+    z-index: 500;
+}
+
+nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    padding: 0 1rem;
+}
+
+nav .button{
+    color: black;
+    background-color: white;
+}
+
+nav ul{
+    display: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 30px;
+}
+
+/* MAIN */
+
+
 
 
 
