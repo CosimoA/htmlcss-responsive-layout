@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+    color:white;
 }
 
 
@@ -17,7 +18,6 @@
 section, footer{
     min-height: 400px;
 }
-
 
 
 /*----------DEBUG----------*/
@@ -54,7 +54,7 @@ h4{
 }
 
 p{
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -72,7 +72,7 @@ nav .button, #planning .col, #benefits .col{
     background-color: white;
 }
 
-#planning, #benefits, #slogan, #testimonials .col{
+#planning, #benefits, #slogan, #testimonials .col, #btn-arrow{
     background-color: #9792e4;
 }
 
@@ -83,11 +83,11 @@ footer{
 
 /*----------TXT COLORS----------*/
 
-nav a, .menu-icon, #features .button{
+/* nav a, .menu-icon, #features .button, #planning article{
     color: white;
-}
+} */
 
-nav .button{
+nav .button, #development h3, #development em, #btn-arrow i{
     color: black;
 }
 
@@ -223,8 +223,27 @@ article i{
 
 /* planning */
 
+#planning img{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+#planning h2{
+    padding: 3rem 0;
+}
+
 #planning .col{
     border-radius: 2rem;
+}
+
+#btn-arrow{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 50%;
 }
 
 /* testimonials */
@@ -238,6 +257,7 @@ article i{
 #benefits .col{
     border-radius: 1rem;
 }
+
 
 /* about-us */
 
