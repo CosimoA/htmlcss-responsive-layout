@@ -5,6 +5,18 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+/*----------DEBUG----------*/
+
+.col {
+    min-height: 300px;
+    min-width: 200px;
+    border: 1px solid black;
+}
+
+section, footer{
+    min-height: 400px;
+}
+
 /*************************************************
     GENERAL STYLES
  *************************************************/
@@ -19,28 +31,36 @@
  }
 
 
- /* BACKGROUND COLORS */
- .bg-blu{
+ /*----------BACKGROUND COLORS----------*/
+header{
     background-color: #0084fd;
  }
 
- .bg-light-blu{
+ #features .col{
     background-color: #b5ddff;
  }
 
- .bg-violet{
+ nav .button, #planning .col, #benefits .col{
+    background-color: white;
+}
+
+#planning, #benefits, #slogan, #testimonials .col{
     background-color: #9792e4;
  }
 
- .gb-dark-grey{
+ footer{
     background-color: #333333;
  }
 
- /* TXT COLORS */
+ /*----------TXT COLORS----------*/
 
- .tx-white{
+ nav a, .menu-icon{
     color: white;
  }
+
+ nav .button{
+    color: black;
+}
 
  .tx-blu{
     color: #0084fd;;
@@ -58,7 +78,7 @@
    color: #fdc15f;
  }
 
- /* BUTTONS */
+ /*----------BUTTONS----------*/
 
  .button{
     border-radius: 18px;
@@ -78,23 +98,23 @@
     UTILITIES
  ************************************************/
 
-/* LAYOUT */
+/*----------LAYOUT----------*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+}
+
+.row{
+    padding: 2rem 2rem 4rem;
 }
 
 .col {
+    margin: 2rem 0;
     padding: 0 1rem;
-    /* debug */
-    min-height: 300px;
-    min-width: 200px;
-    border: 1px solid black;
 }
 
-/* TEXT */
-.text-center {
+/*----------TEXT----------*/
+.txt-center {
     text-align: center;
 }
 
@@ -102,7 +122,7 @@
     SITE SECTIONS
  ************************************************/
 
- /* HEADER */
+ /*----------HEADER----------*/
 header{
     z-index: 500;
 }
@@ -112,16 +132,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
 }
 
 nav a{
-    color: white;
     padding: 0 1rem;
-}
-
-nav .button{
-    color: black;
-    background-color: white;
 }
 
 nav ul{
@@ -129,11 +144,41 @@ nav ul{
 }
 
 .menu-icon{
-    color: white;
-    font-size: 30px;
+    font-size: 32px;
 }
 
-/* MAIN */
+/*----------MAIN----------*/
+
+/* features */
+#features .col{
+    border-radius: 1rem;
+}
+
+/* planning */
+
+#planning .col{
+    border-radius: 2rem;
+}
+
+/* testimonials */
+
+#testimonials .col{
+    border-radius: 2rem;
+}
+
+/* benefits */
+
+#benefits .col{
+    border-radius: 1rem;
+}
+
+/* about-us */
+
+/* slogan */
+
+
+/*----------FOOTER----------*/
+
 
 
 
