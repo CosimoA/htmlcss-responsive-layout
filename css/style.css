@@ -5,100 +5,142 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+
 /*----------DEBUG----------*/
 
 .col {
     min-height: 300px;
-    min-width: 200px;
-    border: 1px solid black;
+    min-width: 250px;
+    /* border: 1px solid black; */
 }
 
 section, footer{
     min-height: 400px;
 }
 
+
+
+/*----------DEBUG----------*/
+
+
 /*************************************************
     GENERAL STYLES
- *************************************************/
+*************************************************/
 
- li{
+li{
     display: inline-block;
     list-style-type: none;
- }
+}
 
- a{
+a{
     text-decoration: none;
- }
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+    padding: 1.5rem 0;
+}
+
+h4{
+    font-size: 20px
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
 
 
- /*----------BACKGROUND COLORS----------*/
-header{
+/*----------BACKGROUND COLORS----------*/
+
+header, #features .button{
     background-color: #0084fd;
- }
+}
 
- #features .col{
+#features .col{
     background-color: #b5ddff;
- }
+}
 
- nav .button, #planning .col, #benefits .col{
+nav .button, #planning .col, #benefits .col{
     background-color: white;
 }
 
 #planning, #benefits, #slogan, #testimonials .col{
     background-color: #9792e4;
- }
+}
 
- footer{
+footer{
     background-color: #333333;
- }
+}
 
- /*----------TXT COLORS----------*/
 
- nav a, .menu-icon{
+/*----------TXT COLORS----------*/
+
+nav a, .menu-icon, #features .button{
     color: white;
- }
+}
 
- nav .button{
+nav .button{
     color: black;
 }
 
- .tx-blu{
+#features h3, article i{
     color: #0084fd;;
- }
+}
 
- .tx-grey{
+#features p{
     color: #5b6f80;
- }
+}
 
- .tx-violet{
+.tx-violet{
     color: #9792e4;
- }
+}
 
- .tx-yellow{
+.tx-yellow{
    color: #fdc15f;
- }
+}
 
- /*----------BUTTONS----------*/
 
- .button{
-    border-radius: 18px;
+/*----------BUTTONS----------*/
+
+.button{
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.btn-small{
     padding: 0.5rem 1rem;
- }
+}
 
- .btn-padding{
-    padding: 0 2rem;
+.btn-medium{
+    padding: 0.5rem 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
 
- }
-
- .btn-big{
+.btn-big{
     padding: 1rem 2.5rem;
- }
+    font-weight: bold;
+}
 
- /************************************************
+.button i{
+    padding-right: 0.5rem;
+}
+
+
+/************************************************
     UTILITIES
- ************************************************/
+************************************************/
 
 /*----------LAYOUT----------*/
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -110,19 +152,24 @@ header{
 
 .col {
     margin: 2rem 0;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    text-align: center;
 }
 
+
 /*----------TEXT----------*/
+
 .txt-center {
     text-align: center;
 }
 
+
 /************************************************
     SITE SECTIONS
- ************************************************/
+************************************************/
 
- /*----------HEADER----------*/
+/*----------HEADER----------*/
+
 header{
     z-index: 500;
 }
@@ -147,11 +194,31 @@ nav ul{
     font-size: 32px;
 }
 
+
 /*----------MAIN----------*/
 
 /* features */
+
 #features .col{
     border-radius: 1rem;
+}
+
+#features p{
+    font-weight: bold;
+}
+
+#col-large{
+    text-align: left;
+}
+
+#col-large img{
+    width: 100%;
+    display: block;
+}
+
+article i{
+    padding-top: 1.5rem;
+    font-size: 80px;
 }
 
 /* planning */
@@ -174,6 +241,7 @@ nav ul{
 
 /* about-us */
 
+
 /* slogan */
 
 
@@ -181,17 +249,6 @@ nav ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /************************************************
     RESPONSIVE
- ************************************************/
+************************************************/
