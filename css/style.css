@@ -9,15 +9,15 @@
 
 /*----------DEBUG----------*/
 
-.col {
+/* .col {
     min-height: 300px;
     min-width: 250px;
-    /* border: 1px solid black; */
-}
+    border: 1px solid black;
+} */
 
-section, footer{
+/* section, footer{
     min-height: 400px;
-}
+} */
 
 
 /*----------DEBUG----------*/
@@ -73,7 +73,7 @@ header, #features .button{
     background-color: #b5ddff;
 }
 
-nav .button, #planning .col, #benefits .col{
+nav .button, #planning .col, #benefits .col, #slogan .button{
     background-color: white;
 }
 
@@ -100,11 +100,11 @@ nav .button, #development h3, #development em, #btn-arrow i, #testimonials h4 , 
     color: #5b6f80;
 }
 
-#testimonials h2, #benefits article h2, #benefits article h3, #about-us h2, #ceo-card h3, #about-us .circle i{
+#testimonials h2, #benefits article h2, #benefits article h3, #about-us h2, #ceo-card h3, #about-us .circle i, #slogan .button, footer span a{
     color: #9792e4;
 }
 
-.tx-yellow{
+#slogan h1{
    color: #fdc15f;
 }
 
@@ -127,7 +127,7 @@ nav .button, #development h3, #development em, #btn-arrow i, #testimonials h4 , 
 }
 
 .btn-big{
-    padding: 1rem 2.5rem;
+    padding: 1rem 5rem;
     font-weight: bold;
 }
 
@@ -170,7 +170,7 @@ nav .button, #development h3, #development em, #btn-arrow i, #testimonials h4 , 
 
 /*----------TEXT----------*/
 
-#testimonials article, #benefits {
+#testimonials article, #benefits, #slogan, footer{
     text-align: center;
 }
 
@@ -283,6 +283,10 @@ article i{
     padding-bottom: 2rem;
 }
 
+#about-us p{
+    font-size: 1.2rem;
+}
+
 #about-us article{
     padding-top: 1rem;
 }
@@ -312,8 +316,25 @@ article i{
 
 /* slogan */
 
+#slogan .button{
+    margin-bottom: 1.5rem;
+}
+
+#slogan span a{
+    text-decoration: underline;
+}
+
 
 /*----------FOOTER----------*/
+
+footer span{
+    display: block;
+    padding: 5rem 0 1rem;
+}
+
+footer span a{
+    text-decoration: underline;
+}
 
 
 
