@@ -178,6 +178,7 @@ nav .button, #development h3, #development em, #btn-arrow i, #testimonials h4 , 
 /*----------IMG----------*/
 
 .circle{
+    position: relative;
     width: 200px;
     padding: 1.5rem 0;
     margin: 0 auto;
@@ -317,8 +318,8 @@ article i{
 
 #about-us .circle i{
     font-size: 80px;
-    position: absolute ;
-    left: 180px;
+    position: absolute;
+    right: -13px;
 }
 
 /* slogan */
@@ -359,7 +360,7 @@ footer span a{
 
 /* TABLET 768px */
 
-@media all and (min-width: 769px){
+@media all and (min-width: 768px){
     #features .row{
         display: flex;
         flex-wrap: wrap;
@@ -412,9 +413,87 @@ footer span a{
     #ceo-card .circle{
         display: flex;
     }
-    #ceo-card .circle i{
-        font-size: 80px;
-        position: absolute;
-        left: 90%;
+}
+
+/* Desktop 1200px */
+
+@media all and (min-width: 1200px){
+    #features .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -0.5rem;
+    }
+
+    #features .col{
+        width: calc((100% / 3) - 1rem);
+        margin: 0 0.5rem 1rem;
+    }
+
+    #col-large{
+        display: flex;
+        min-width: calc((100% / 3*2) - 1rem);
+    }
+
+    #col-large div{
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    #col-large img{
+        width: 40%;
+    }
+
+    #planning .container{
+        max-width: 1000px;
+    }
+
+    #planning .row{
+        display: flex;
+    }
+
+    #planning article{
+        padding-right: 4rem;
+    }
+
+    #development{
+        margin-top: 15rem;
+    }
+
+    #benefits .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -0.5rem;
+    }
+
+    #benefits .col{
+        width: calc((100% / 3) - 1rem);
+        margin: 0 0.5rem 1rem;
+    }
+
+    #benefits h2{
+        width: 100%;
+    }
+
+    #testimonials .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    #testimonials .circle{
+        margin-right: 1rem;
+    }
+
+    #about-us .row{
+        display: flex;
+    }
+
+    #ceo-card{
+        margin-left: 10%;
+    }
+
+    #ceo-card .circle{
+        display: flex;
     }
 }
