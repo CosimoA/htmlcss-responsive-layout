@@ -60,6 +60,7 @@ h4{
 
 p{
     padding-bottom: 1.5rem;
+    line-height: 2em;
 }
 
 
@@ -170,7 +171,7 @@ nav .button, #development h3, #development em, #btn-arrow i, #testimonials h4 , 
 
 /*----------TEXT----------*/
 
-#testimonials article, #benefits, #slogan, footer{
+#testimonials article, #benefits, #slogan, footer {
     text-align: center;
 }
 
@@ -190,6 +191,8 @@ nav .button, #development h3, #development em, #btn-arrow i, #testimonials h4 , 
 /*----------HEADER----------*/
 
 header{
+    position: fixed;
+    width: 100%;
     z-index: 500;
 }
 
@@ -215,6 +218,10 @@ nav ul{
 
 
 /*----------MAIN----------*/
+
+main{
+    padding-top: 80px;
+}
 
 /* features */
 
@@ -316,6 +323,10 @@ article i{
 
 /* slogan */
 
+#slogan .container{
+    max-width: 530px;
+}
+
 #slogan .button{
     margin-bottom: 1.5rem;
 }
@@ -332,6 +343,10 @@ footer span{
     padding: 5rem 0 1rem;
 }
 
+footer .container{
+    max-width: 450px;
+}
+
 footer span a{
     text-decoration: underline;
 }
@@ -341,3 +356,65 @@ footer span a{
 /************************************************
     RESPONSIVE
 ************************************************/
+
+/* TABLET 768px */
+
+@media all and (min-width: 769px){
+    #features .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -0.5rem;
+    }
+
+    #features .col{
+        width: calc((100% / 3) - 1rem);
+        margin: 0 0.5rem 1rem;
+    }
+
+    #col-large{
+        min-width: calc((100% / 3*2) - 1rem);
+    }
+
+    #benefits .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -0.5rem;
+    }
+
+    #benefits .col{
+        width: calc(50% - 1rem);
+        margin: 0 0.5rem 1rem;
+    }
+
+    #benefits h2{
+        width: 100%;
+    }
+
+    #testimonials .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    #testimonials .circle{
+        margin-right: 1rem;
+    }
+
+    #about-us .row{
+        display: flex;
+    }
+
+    #ceo-card{
+        margin-left: 10%;
+    }
+
+    #ceo-card .circle{
+        display: flex;
+    }
+    #ceo-card .circle i{
+        font-size: 80px;
+        position: absolute;
+        left: 90%;
+    }
+}
