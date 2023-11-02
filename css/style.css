@@ -418,6 +418,14 @@ footer span a{
 /* Desktop 1200px */
 
 @media all and (min-width: 1200px){
+    nav ul{
+        display:inline-block
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
     #features .row{
         display: flex;
         flex-wrap: wrap;
